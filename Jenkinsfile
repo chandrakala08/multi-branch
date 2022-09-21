@@ -25,11 +25,5 @@ pipeline{
                 echo "testing qa"
             }
         }
-<<<<<<< HEAD
-     }
-    }
-}
-=======
         }
     }
->>>>>>> 3f7d049e97112c58759ebdc542e46010a6f0ae8f
