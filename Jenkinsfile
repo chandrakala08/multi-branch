@@ -9,5 +9,13 @@ pipeline{
                 echo"git cheak out completed"
             }
         }
+        stage("maven build"){
+            when {
+                branch "develop"
+            }
+            steps{
+                echo "maven build completed"
+            }
+        }
     }
 }
