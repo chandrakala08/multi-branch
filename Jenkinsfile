@@ -17,5 +17,14 @@ pipeline{
                 echo "maven build completed"
             }
         }
+        stage("qa testing"){
+            when {
+                branch "qa"
+            }
+            steps{
+                echo "testing qa"
+            }
+        }
+        }
     }
 }
