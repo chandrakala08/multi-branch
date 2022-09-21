@@ -1,9 +1,12 @@
 pipeline{
     agent any
     stages{
-        stage("Demo"){
+        stage("git cheak out"){
+            when {
+                branch "develop"
+            }
             steps{
-                echo"Welcome to Jenkins"
+                echo"git cheak out completed"
             }
         }
     }
